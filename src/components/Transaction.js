@@ -9,7 +9,7 @@ const TransactionList = ({ address }) => {
     
     const fetchTransactions = async () => {
       try {
-        const response = await axios.post('https://backend123.up.railway.app/api', { address });
+        const response = await axios.post('https://backend123.up.railway.app/api/transactions', { address });
         setTransactions(response.data);
       } catch (error) {
         console.error('Error fetching transactions:', error);
