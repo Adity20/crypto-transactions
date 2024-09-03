@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const TransactionList = ({ address }) => {
   const [transactions, setTransactions] = useState([]);
-  const [error, setError] = useState(null);
+  const [error] = useState(null);
 
   useEffect(() => {
     

@@ -10,8 +10,8 @@ const ExpensesContainer = styled.div`
 `;
 
 const TotalExpenses = ({ address }) => {
-  const [totalExpenses, setTotalExpenses] = useState(null);
-  const [currentPrice, setCurrentPrice] = useState(null);
+  const [, setTotalExpenses] = useState(null);
+  const [, setCurrentPrice] = useState(null);
 
   useEffect(() => {
     const fetchExpenses = async () => {
